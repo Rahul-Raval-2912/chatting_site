@@ -1,3 +1,11 @@
-# chatting_site
-Sorry for the delay, but I am making sure it's coming soon 
-(because I want to add a cloud server in Raven, but first, I have to learn more about it)
+# chatting_site RAVEN 
+|----------------|--------------------------------------------------------------------------|
+| Area           | Technology                                                               |
+| -------------- | ------------------------------------------------------------------------ |
+| Frontend       | HTML, CSS, JavaScript                                                    |
+| Backend        | Python Django                                                            |
+| Messaging      | Django Channels (for WebSocket real-time chat) or REST (for basic setup) |
+| Database       | SQLite (local dev) → PostgreSQL (AWS)                                    |
+| Hosting        | AWS EC2 (backend), S3 (images), RDS (DB)                                 |
+| Authentication | Django auth (built-in)                                                   |
+|----------------|--------------------------------------------------------------------------|

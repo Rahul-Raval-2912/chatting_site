@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'chat/css/register.css' %}">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Create Your Account</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+        <div class="login-link">
+            <a href="{% url 'login' %}">Already have an account? Login here.</a>
+        </div>
+    </div>
+</body>
+</html>

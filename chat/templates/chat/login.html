@@ -1,24 +1,21 @@
-<!-- {% load static %} -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Login - Raven</title>
-    <link rel="stylesheet" href="{% static 'chat/styles.css' %}">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'chat/css/login.css' %}">
 </head>
-
 <body>
-    <div class="container">
-        <h2>Login to Raven</h2>
-        <form method="post">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="POST">
             {% csrf_token %}
             <input type="text" name="username" placeholder="Username" required><br>
             <input type="password" name="password" placeholder="Password" required><br>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
     </div>
 </body>
-
 </html>
